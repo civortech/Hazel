@@ -1,8 +1,6 @@
 #pragma once
 
-#include "Event.h"
-
-#include <sstream>
+#include "Hazel/Events/Event.h"
 
 namespace Hazel {
 
@@ -23,7 +21,7 @@ namespace Hazel {
 		}
 
 		EVENT_CLASS_TYPE(MouseMoved)
-			EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
+		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
 	private:
 		float m_MouseX, m_MouseY;
 	};
@@ -45,7 +43,7 @@ namespace Hazel {
 		}
 
 		EVENT_CLASS_TYPE(MouseScrolled)
-			EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
+		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
 	private:
 		float m_XOffset, m_YOffset;
 	};
